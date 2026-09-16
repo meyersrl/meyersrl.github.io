@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home Assistant — Personal Smart Home Hub</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1a1a1a; --bg: #ffffff; --muted: #5a5a5a; --accent: #0277bd; --line: #e3e3e3; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e8e8e8; --bg: #14161a; --muted: #a0a0a0; --accent: #4fc3f7; --line: #2c2f36; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 48px 16px; font: 16px/1.65 -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--fg); background: var(--bg); }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 2rem; margin: 0 0 .25em; }
+  h2 { font-size: 1.25rem; margin-top: 2em; }
+  .sub { color: var(--muted); margin-top: 0; }
+  ul { padding-left: 1.2em; }
+  footer { margin-top: 3em; padding-top: 1.5em; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Home Assistant</h1>
+  <p class="sub">A private, self-hosted smart home hub running on a Raspberry Pi in a single household.</p>
+
+  <h2>What this application does</h2>
+  <p>
+    This is a personal installation of <a href="https://www.home-assistant.io/">Home Assistant</a>, the
+    open-source home automation platform. It runs on a Raspberry Pi 5 inside one private home and is used
+    by the members of that household only. It is not a commercial product and is not offered to the public.
+  </p>
+
+  <h2>Why it connects to Google</h2>
+  <p>
+    The owner of this installation uses Google Nest thermostats, cameras, and a video doorbell. This
+    application uses the Google Smart Device Management API so those devices can be viewed and controlled
+    from the household dashboard, alongside their other smart home equipment.
+  </p>
+  <ul>
+    <li>Read and adjust Nest thermostat temperature, mode, and fan settings</li>
+    <li>View live camera and doorbell streams inside the home</li>
+    <li>Receive motion, person, and doorbell events to trigger household automations</li>
+  </ul>
+
+  <h2>Where the data goes</h2>
+  <p>
+    Nowhere. All device data stays on the Raspberry Pi in the home where it is installed. Nothing is
+    transmitted to any third party, published, or sold. See the <a href="privacy.html">Privacy Policy</a>
+    for details.
+  </p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms of Service</a>
+  </footer>
+</main>
+</body>
+</html>
